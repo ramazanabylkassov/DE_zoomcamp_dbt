@@ -1,0 +1,11 @@
+my-bigquery-db:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: fresh-ocean-412204
+      dataset: dbt_inter
+      threads: 4 # Must be a value of 1 or greater
+      keyfile: /home/ramazan/DE_zoomcamp_2024/module_4/service_account_key/fresh-ocean-412204-be4d522923c0.json
+      [OPTIONAL_CONFIG](#optional-configurations): VALUE
